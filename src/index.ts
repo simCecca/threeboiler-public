@@ -1,4 +1,3 @@
-import { OrbitControls } from "@three-ts/orbit-controls";
 import * as THREE from "three";
 import { draw2dRandomly } from "./examples/drawingAlgos";
 import Hearts from "./examples/hearts";
@@ -15,9 +14,7 @@ const main = async () => {
   renderer.outputEncoding = THREE.sRGBEncoding;
 
   const camera = new THREE.PerspectiveCamera(30, width / height, 1, 10500);
-  camera.position.set(0, 84, 284);
-  const controls = new OrbitControls(camera, renderer.domElement);
-  controls.autoRotate = true;
+  camera.position.set(0, 0, 284);
 
   const scene = new THREE.Scene();
   scene.background = new THREE.Color(0x000000);
