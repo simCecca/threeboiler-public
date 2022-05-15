@@ -1,4 +1,5 @@
 import * as THREE from "three";
+import Compass from "./Compass";
 import { draw2dRandomly } from "./examples/drawingAlgos";
 import Hearts from "./examples/hearts";
 import { getText } from "./examples/primitives";
@@ -15,6 +16,9 @@ const main = async () => {
 
   const camera = new THREE.PerspectiveCamera(30, width / height, 1, 10500);
   camera.position.set(0, 0, 284);
+
+  // our simple Compass
+  const compass = new Compass(camera, renderer);
 
   const scene = new THREE.Scene();
   scene.background = new THREE.Color(0x000000);
