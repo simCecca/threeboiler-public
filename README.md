@@ -5,7 +5,7 @@ This is a Simple project created and maintained with the just for fun philosophy
 * install packages
 
 ```
-npm install threejs-compass
+npm install
 ```
 
 * start the project
