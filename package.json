@@ -30,6 +30,6 @@
     "html-webpack-plugin": "^5.5.0",
     "lodash": "^4.17.21",
     "three": "^0.139.1",
-    "threejs-compass": "^1.1.3"
+    "threejs-compass": "^1.1.7"
   }
 }
